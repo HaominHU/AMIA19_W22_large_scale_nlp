@@ -95,13 +95,13 @@ Lookup (aka dig) a local cluster resources and get time to response for service/
 
 Check for internal kubernetes network communications functionality. 
 
-1. get service name from kube-system namespace
+1. Get service name from kube-system namespace
 ```
     kubectl get service --namespace=kube-system
     kubectl exec -ti dnstools -- time dig @10.96.0.10 kube-dns.kube-system # query by endpoint name
 ```
 
-2. show service endpoint name
+2. Show service endpoint name
 ```
     kubectl get endpoints --namespace=kube-system  
 ```
