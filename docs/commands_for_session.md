@@ -93,7 +93,7 @@ Advanced network diagnostics (using newly created pod)
 Usage: Determine if built-in kubernetes DNS is functioning properly
 Lookup (aka dig) a local cluster resources and get time to response for service/ep in `kube-system` namespace by `servicename.kube-system` using cluster name server for lookup (`10.96.0.1`)
 
-Check for internal kubernetes network communications functionality
+Check for internal kubernetes network communications functionality. 
 
 1. get service name from kube-system namespace
 ```
@@ -102,12 +102,14 @@ Check for internal kubernetes network communications functionality
 ```
 
 2. show service endpoint name
-    kubectl get endpoints --namespace=kube-system # 
+```
+    kubectl get endpoints --namespace=kube-system  
+```
 
 2. Lookup for external resources and get time to response. Check for external network communications functionality 
-     
+    ```  
     kubectl exec -ti dnstools -- time dig @10.96.0.10 google.com
-
+    ```
 
 ## 7. Ensemble models for Word Sense Disambiguation (WSD) 
 
