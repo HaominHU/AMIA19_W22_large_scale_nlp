@@ -65,7 +65,7 @@ Build the `vote` image from Dockerfile at target "vote":
     ls -la
     less Dockerfile
     
-Build image from Dockerfile at target = "vote" (NB: need to set env variable `BUILDKIT=1`)
+Build image from Dockerfile at target = "vote" 
 
     docker build -t nlpieumn/vote --target vote . 
 
@@ -97,17 +97,18 @@ Check for internal kubernetes network communications functionality.
 ```
     kubectl get service --namespace=kube-system
 ```
+
 2. Query by endpoint name
 ```
     kubectl exec -ti dnstools -- time dig @10.96.0.10 kube-dns.kube-system 
 ```
 
-2. Show service endpoint name
+3. Show service endpoint name
 ```
     kubectl get endpoints --namespace=kube-system  
 ```
 
-2. Lookup for external resources and get time to response. Check for external network communications functionality 
+4. Lookup for external resources and get time to response. Check for external network communications functionality 
 ```  
     kubectl exec -ti dnstools -- time dig @10.96.0.10 google.com
 ```
