@@ -98,7 +98,10 @@ Check for internal kubernetes network communications functionality.
 1. Get service name from kube-system namespace
 ```
     kubectl get service --namespace=kube-system
-    kubectl exec -ti dnstools -- time dig @10.96.0.10 kube-dns.kube-system # query by endpoint name
+```
+2. Query by endpoint name
+```
+    kubectl exec -ti dnstools -- time dig @10.96.0.10 kube-dns.kube-system 
 ```
 
 2. Show service endpoint name
