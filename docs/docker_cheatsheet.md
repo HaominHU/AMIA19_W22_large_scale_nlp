@@ -1,9 +1,9 @@
 # DOCKER CHEAT SHEET 
 
-## Help (one page at a time)
+## Help 
 
 ```
-docker --help | more
+docker --help | more # scroll one page at a time
 ```
 
 NB: Also see [Docker Cheat Sheet](https://www.docker.com/sites/default/files/d8/2019-09/docker-cheat-sheet.pdf) 
