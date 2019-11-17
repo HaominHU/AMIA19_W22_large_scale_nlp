@@ -65,7 +65,7 @@ Build the `vote` image from Dockerfile at target "vote":
     ls -la
     less Dockerfile
     
-Build image from Dockerfile at target = "vote"; (need to set env variable BUILDKIT=1)
+Build image from Dockerfile at target = "vote"; (need to set env variable `BUILDKIT=1`)
 
     docker build -t nlpieumn/vote --target vote . 
 
