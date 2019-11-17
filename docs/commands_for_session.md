@@ -71,8 +71,6 @@ Build image from Dockerfile at target = "vote"; (need to set env variable BUILDK
 
 ## 6. Let's use Kubernetes! 
 
-Build spec, `kubectl get es/svc`, `kubectl` run dnstools
-
  1. List all nodes in "cluster":
      
         kubectl get nodes 
