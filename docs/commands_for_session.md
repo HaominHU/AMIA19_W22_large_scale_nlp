@@ -48,7 +48,7 @@ To look into the OS release, home directory and `/bin`:
 
  2. Start with `bash` in the ML image:
 
-        docker run -t nlpieumn/ml /bin/bash 
+        docker run -it nlpieumn/ml /bin/bash 
      
  3. Explore your docker image:
 
