@@ -110,16 +110,16 @@ Check for internal kubernetes network communications functionality.
 ```
 
 2. Lookup for external resources and get time to response. Check for external network communications functionality 
-    ```  
+```  
     kubectl exec -ti dnstools -- time dig @10.96.0.10 google.com
-    ```
+```
 
 ## 7. Ensemble models for Word Sense Disambiguation (WSD) 
 
 The standalone script can also run as `python ~/tutorial/scripts/ml.py`. To run svm classifier from within the docker image:
-
-     docker run -it -e DOCKER='True' -v /home/amia/tutorial:/data nlpieumn/ml 
-     /bin/bash -c "python /home/tutorial/ml.py -c svm" 
+```
+    docker run -it -e DOCKER='True' -v /home/amia/tutorial:/data nlpieumn/ml python /home/tutorial/ml.py -c svm
+```
      
 ## 8. Let's use Argo!
 
